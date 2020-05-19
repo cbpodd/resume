@@ -130,8 +130,9 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
-\newcommand{\company}[2]{{\bf #1} \hfill {#2}} % Bold company name and date on the right
+\newcommand{\company}[2]{{\bf #1} \hfill {#2} \\} % Bold company name and date on the right
 \newcommand{\job}[2]{{\em #1} \hfill {\em #2}} % Italic job title and location
+\newcommand{\project}[2]{{\bf #1} \hfill {\em #2}} % Bold company name and date on the right
 
 \newenvironment{rList}{ % 4 input arguments - company name, year(s) employed, job title and location
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
