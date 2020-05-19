@@ -26,8 +26,28 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{hyperref} % Link Support
+\usepackage{xcolor} % Color Support
 
 \pagestyle{empty} % Suppress page numbers
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS SETUP: Setup for links
+%----------------------------------------------------------------------------------------
+
+\hypersetup{
+    hidelinks,
+}
+
+%----------------------------------------------------------------------------------------
+%	Tabular Section Commands
+%----------------------------------------------------------------------------------------
+
+% Defines the ts environment for the tabular sections
+% \newenvironment{tabSection}{
+%   \begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}}}
+%   \begin{list}{}{\leftmargin=0em}}{\end{list}}
+%   {\end{tabular}
+% }
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -110,18 +130,14 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
+\newcommand{\company}[2]{{\bf #1} \hfill {#2}} % Bold company name and date on the right
+\newcommand{\job}[2]{{\em #1} \hfill {\em #2}} % Italic job title and location
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
+\newenvironment{rList}{ % 4 input arguments - company name, year(s) employed, job title and location
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

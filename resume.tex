@@ -37,6 +37,8 @@
 \newcommand {\viterbi} {\href{https://viterbischool.usc.edu/}{Viterbi School of Engineering}}
 \newcommand {\trojanhacks} {\href{https://www.uscacm.org/}{TrojanHacks}}
 \newcommand {\uscbingo} {\href{https://github.com/cbpodd/TrojanHacks2018/}{USC Bingo}}
+\newcommand {\la} {Los Angeles, CA}
+\newcommand {\mylocation} {\la}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
@@ -44,12 +46,12 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
 \name{Cameron Podd} % Your name
-\address{Los Angeles, CA} % Your City
-\address{\linkedin \\ \github} % LinkedIn and Github
-\address{\email \\ \phone} % Your phone number and email
+\address{\mylocation} % Your City
+\address{\linkedin \, \\ \github} % LinkedIn and Github
+\address{\email \, \\ \phone} % Your phone number and email
 
 \begin{document}
 
@@ -59,10 +61,12 @@
 
 \begin{rSection}{Education}
 
-{\bf \usc \viterbi} \hfill {\em May 2021} \\ 
-MS, Computer Science \hfill {GPA: 4.00} \\
-BS, Computer Science / Business Administration \hfill {GPA: 3.70} \\
-Honors: Progressive Degree Program, Resident Honors Program, Dean's List
+\company{\usc}{May 2021} \\
+\job{MS, Computer Science}{GPA: 4.00} \\
+\job{BS, Computer Science / Business Administration}{GPA: 3.70} \smallskip
+\begin{rList}
+\item Honors: Progressive Degree Program, Resident Honors Program, Dean's List
+\end{rList}
 
 \end{rSection}
 
@@ -87,28 +91,30 @@ Libraries & React.js/Redux, Node.js, Express.js, Flask, Spark Java
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{\microsoft}{Los Angeles, CA}{Software Engineering Intern}{May
-    2020 - Present}
+\company{\microsoft}{\la} \\
+\job{Software Engineering Intern}{May 2020 - Present} \smallskip
+\begin{rList}
 \item Summer internship on the Azure Stack team under Alexey Ovsyannikov
-\end{rSubsection}
+\end{rList}
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{\lefttravel}{Los Angeles, CA}{Software Engineering
-    Intern}{May 2019 - August 2019}
+\company{\lefttravel}{\la} \\
+\job{Software Engineering Intern}{May 2019 - August 2019} \smallskip
+\begin{rList}
 \item Spearheaded component and library-based redesign of frontend code, 
     reducing code by 75\%
 \item Redesigned and rebuilt backend, decreasing required calls by 30\%
 \item Built enterprise full-stack application in 12 weeks, culminating in early
     product release
-\end{rSubsection}
+\end{rList}
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{\nymbl}{Los Angeles, CA}{Computer Science
-    Intern}{June 2018 - August 2018}
-\item TODO
-\end{rSubsection}
+\company{\nymbl}{\la} \\
+\job{Computer Science Intern}{June 2018 - August 2018}
 
 \end{rSection}
 
@@ -118,37 +124,44 @@ Libraries & React.js/Redux, Node.js, Express.js, Flask, Spark Java
 
 \begin{rSection}{Projects}
 
-    \begin{rSubsection}{\thediningapp}{March 2019 - June 2019}{}{}
+\company{\thediningapp}{March 2019 - June 2019} \smallskip
+\begin{rList}
 \item Constructed cloud-native backend microservices in Node.js with Express.js
     and MongoDB
 \item Designed a layered caching system, cutting average API response time by
     50\%
-\end{rSubsection}
+\end{rList}
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{USC Involved}{September 2018 - December 2018}{}{}
+\company{USC Involved}{September 2018 - December 2018} \smallskip
+\begin{rList}
 \item Built web application facilitating involvement with on-campus 
     organizations
 \item Integrated web application with Firebase’s NoSQL database for real-time
     information
-\end{rSubsection}
+\end{rList}
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{\sdhacks: \motopanion}{October 2018}{}{}
+\company{\sdhacks: \motopanion}{October 2018} \smallskip
+\begin{rList}
 \item Created a browser-based full-stack application in 36 hours
 \item Trained Keras-based neural network designed to predict car damage
-\end{rSubsection}
+\end{rList}
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{\trojanhacks: \uscbingo}{March 2018}{}{}
+\company{\trojanhacks: \uscbingo}{March 2018} \smallskip
+\begin{rList}
 \item Developed web-based bingo application with HTML/CSS and JavaScript in 24 
     hours
 \item Programmed appearance of X’s and checks, coupled with efficient win 
     checking 
-\end{rSubsection}
+\end{rList}
 
 \end{rSection}
 
@@ -158,20 +171,23 @@ Libraries & React.js/Redux, Node.js, Express.js, Flask, Spark Java
 
 \begin{rSection}{Leadership \& Involvement}
 
-\begin{rSubsection}{\uscih}{Los Angeles, CA}{President}{May 2019 -
-    April 2020}
+\company{\uscih}{\la} \\
+\job{President}{May 2019 - April 2020} \smallskip
+\begin{rList}
 \item Facilitated e-board collaboration through the creation of team Google Drive
 \item Spearheaded compliance efforts to secure \$8,000 in funding from USC
-\item Team goalie: 2017-present
-\end{rSubsection}
+\end{rList}
+\job{Team Goalie}{October 2017 - Present} \smallskip
+\vspace{0.5em}
 
 %------------------------------------------------
 
-\begin{rSubsection}{\lavalab}{Los Angeles, CA}{Developer}{September 2018 -
-    Present}
+\company{\lavalab}{\la} \\
+\job{Developer}{September 2018 - Present} \smallskip
+\begin{rList}
 \item Member of Elite Start-up Incubator, Class of Fall 2018
 \item Created, managed, and pitched startup through pre-seed time frame
-\end{rSubsection}
+\end{rList}
 
 \end{rSection}
 
