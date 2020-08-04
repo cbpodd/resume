@@ -7,9 +7,9 @@ all: open
 
 $(OUTPUT): $(RESUME) $(STYLE)
 	$(CC) $(RESUME) -o $(OUTPUT)
-	
+
 open: $(OUTPUT)
-	open $(OUTPUT)
+	open $(OUTPUT) -a "Preview.app"
 
 clean:
 	rm *.pdf *.aux *.log *.out
