@@ -26,18 +26,15 @@
 \newcommand {\phone} {\href{tel:3036533718}{(303)~$\cdot$~653~$\cdot$~3718}}
 \newcommand {\lavalab} {\href{https://usclavalab.org/}{LavaLab}}
 \newcommand {\uscih} {\href{https://trojanshockey.com/}{USC Ice Hockey}}
-\newcommand {\sdhacks} {\href{https://www.sdhacks.io/}{SDHacks}}
+\newcommand {\mountaineers} {\href{https://www.mountaineers.org/}{The Mountaineers}}
 \newcommand {\dockerfiles} {\href{https://github.com/cbpodd/dockerfiles}{Dockerfiles}}
 \newcommand {\aifororcas} {\href{https://www.orcasound.net/}{AI For Orcas}}
 \newcommand {\thediningapp} {\href{https://github.com/cbpodd/tdhbackend}{The Dining App}}
 \newcommand {\microsoft} {\href{https://www.microsoft.com/}{Microsoft}}
+\newcommand {\aldo} {\href{https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-overview?view=azloc-2507}{Azure Local Disconnected Operations}}
 \newcommand {\lefttravel} {\href{https://www.travel-left.com/}{Left Travel}}
-\newcommand {\thecyclist} {\href{https://www.thecyclist.com/}{The Cyclist Bike Shop}}
-\newcommand {\nymbl} {\href{https://nymblscience.com/}{Nymbl Science}}
 \newcommand {\usc} {\href{https://www.usc.edu/}{University of Southern California}}
 \newcommand {\viterbi} {\href{https://viterbischool.usc.edu/}{Viterbi School of Engineering}}
-\newcommand {\trojanhacks} {\href{https://www.uscacm.org/}{TrojanHacks}}
-\newcommand {\uscbingo} {\href{https://github.com/cbpodd/TrojanHacks2018/}{USC Bingo}}
 \newcommand {\la} {Los Angeles, CA}
 \newcommand {\seattle} {Seattle, WA}
 \newcommand {\mylocation} {\seattle}
@@ -51,11 +48,71 @@
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
 \name{Cameron Podd} % Your name
-\address{\mylocation} % Your City
+% \address{\mylocation} % Your City
 \address{\linkedin \, \\ \github} % LinkedIn and Github
 \address{\email \, \\ \phone} % Your phone number and email
 
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+    \begin{rSection}{Experience}
+
+        \company{\microsoft}{\seattle}
+            \job{Software Engineer II}{August 2022 - Present}
+                \begin{rList}
+		    \item Built {\aldo}, a self-contained appliance enabling soverign scale organizations to
+			manage their local infrastructure \& services from an Azure-consistent
+			control plane
+		    \item Championed critical security features, from self-healing firewall protection
+			to autonomous certificate rotation
+		    \item Designed health \& readiness subsystems, ensuring faults
+			are caught as early as possible
+                \end{rList}
+            \job{Software Engineer}{July 2021 - August 2022}
+                \begin{rList}
+		    \item Contributed to a 'No-Ops' serverless platform, improving lifecycle
+			service availability from 70\% to 99.9\%
+                \end{rList}
+            \job{Software Engineering Intern}{May 2020 - August 2020}
+                \begin{rList}
+                    \item Evaluated open-source messaging technologies
+                        and chose one to integrate with the production system
+                    % \item Participated in cross-team collaboration streamlining
+                    %     the health management process for customers
+                    % \item Developed thorough test suite ensuring the product exceeds
+                    %    customer SLAs
+                \end{rList}
+        \vspace{0.5em}
+
+%------------------------------------------------
+
+        \company{\lefttravel}{\la}
+            \job{Software Engineering Intern}{May 2019 - August 2019}
+                \begin{rList}
+                    % \item Spearheaded component-based redesign of frontend,
+                    %     reducing codebase size by 75\%
+                    % \item Redesigned and rebuilt backend, decreasing required calls by 30\%
+                    \item Built enterprise full-stack application in 12 weeks, culminating in early
+                        product release
+                \end{rList}
+        \vspace{0.5em}
+
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+    \begin{rSection}{Skills}
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+            Languages & C\#, Rust, PowerShell, Python, JavaScript/TypeScript, SQL, Java, C/C++ \\
+	    Subjects & Highly Available \& Reliable Design, Distributed Edge Computing, Full-Stack Development \\
+            Tools & Azure, Docker, ASP.NET, SQL/NoSQL Databases, React.JS \\
+        \end{tabular}
+    \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -71,51 +128,27 @@
     \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS SECTION
+%	LEADERSHIP & INVOLVEMENT SECTION
 %----------------------------------------------------------------------------------------
 
-    \begin{rSection}{Skills}
-        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Languages & C\#, Python, JavaScript, SQL, Java, C++ \\
-            Subjects & Full-Stack Development, SQL/NoSQL Databases, Highly Available \& Reliable Design \\
-            Tools & Azure, MongoDB, MySQL/PostgreSQL, Docker, React.JS \\
-        \end{tabular}
-    \end{rSection}
+    \begin{rSection}{Leadership \& Involvement}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-    \begin{rSection}{Experience}
-
-        \company{\microsoft}{\seattle}
-            \job{Software Engineer}{July 2021 - Present}
+        \company{\mountaineers}{\seattle}
+            \job{Climbing Instructor}{January 2025 - Present}
                 \begin{rList}
-                    \item Member of Azure Stack team that develops low-footprint
-                        solutions for private cloud computing
-                \end{rList}
-            \job{Software Engineering Intern}{May 2020 - August 2020}
-                \begin{rList}
-                    \item Evaluated open-source messaging technologies
-                        and chose one to integrate with the production system
-                    \item Participated in cross-team collaboration streamlining
-                        the health management process for customers
-                    \item Developed thorough test suite ensuring the product exceeds
-                        customer SLAs
+		    \item Instructed first-time rock climbers on the fundamentals of belaying and rappelling
+		    \item Ensured a safe, supportive, and inclusive learning environment for students from all backgrounds
                 \end{rList}
         \vspace{0.5em}
 
 %------------------------------------------------
-
-        \company{\lefttravel}{\la}
-            \job{Software Engineering Intern}{May 2019 - August 2019}
+        \company{\uscih}{\la}
+            \job{President}{May 2019 - March 2020}
                 \begin{rList}
-                    \item Spearheaded component-based redesign of frontend,
-                        reducing codebase size by 75\%
-                    % \item Redesigned and rebuilt backend, decreasing required calls by 30\%
-                    \item Built enterprise full-stack application in 12 weeks, culminating in early
-                        product release
+                    \item Managed \$100,000 budget and collected dues for 25-player team
+                    \item Advised and led executive board regarding personnel decisions
                 \end{rList}
+            \job{Team Goalie}{October 2017 - March 2020}
         \vspace{0.5em}
 
     \end{rSection}
@@ -132,42 +165,6 @@
                     detects orca calls from hydrophones
             \end{rList}
         \vspace{0.5em}
-
-%------------------------------------------------
-
-        \project{\dockerfiles}{May 2020 - June 2020}
-            \begin{rList}
-                \item Built command-line Python scripts and custom Docker images to simplify
-                    dependency management
-            \end{rList}
-        \vspace{0.5em}
-
-    \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	LEADERSHIP & INVOLVEMENT SECTION
-%----------------------------------------------------------------------------------------
-
-    \begin{rSection}{Leadership \& Involvement}
-
-        \company{\uscih}{\la}
-            \job{President}{May 2019 - April 2020}
-                \begin{rList}
-                    \item Managed \$100,000 budget and collected dues for 25-player team
-                    \item Advised and led executive board regarding personnel decisions
-                \end{rList}
-            \job{Team Goalie}{October 2017 - May 2021}
-        \vspace{0.5em}
-
-%------------------------------------------------
-
-        \company{\lavalab}{\la}
-            \job{Developer}{September 2018 - May 2021}
-                \begin{rList}
-                    \item Member of USC's elite student-run startup incubator
-                    \item Created startup that facilitated student involvement with on-campus
-                        organizations
-                \end{rList}
 
     \end{rSection}
 
